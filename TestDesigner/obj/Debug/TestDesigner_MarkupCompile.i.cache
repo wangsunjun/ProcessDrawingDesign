@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\王绍孙\Desktop\Designer\TestDesigner\obj\Debug\
+C:\Users\王绍孙\Source\Repos\wangsunjun\ProcessDrawingDesign\TestDesigner\obj\Debug\
 TestDesigner
 none
 false
 DEBUG;TRACE
-C:\Users\王绍孙\Desktop\Designer\TestDesigner\App.xaml
+C:\Users\王绍孙\Source\Repos\wangsunjun\ProcessDrawingDesign\TestDesigner\App.xaml
 1071158512
 
 14-847703340
-2363767227
+231221746300
 controls\ucPager.xaml;DesignWindow.xaml;MainWindow.xaml;ModeChangeWindow.xaml;style\ButtonResource.xaml;style\MenuItemStyle.xaml;style\StackPanel.xaml;style\SysButtonStyle.xaml;style\TabControlStyle.xaml;style\TextBoxStyle.xaml;
 
-False
+True
 

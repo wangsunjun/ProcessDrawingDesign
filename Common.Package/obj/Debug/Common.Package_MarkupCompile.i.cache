@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\王绍孙\Desktop\Designer\Common.Package\obj\Debug\
+C:\Users\王绍孙\Source\Repos\wangsunjun\ProcessDrawingDesign\Common.Package\obj\Debug\
 Common.Package
 none
 false
@@ -13,8 +13,8 @@ DEBUG;TRACE
 15482988555
 11127445224
 26255839466
-141716822120
+14-655189785
 BackwaterValve2Style.xaml;BackwaterValveStyle.xaml;DecontaminationTankStyle.xaml;FilterLeftStyle.xaml;FlowmeterStyle.xaml;FrequencyConverterStyle.xaml;frmBackwaterValve.xaml;frmPump.xaml;HeatExchangerStyle.xaml;PressureTransmitterStyle.xaml;PublicControl\Style.xaml;PumpTagStyle.xaml;TemperatureTransmitterStyle.xaml;TwoSideUserStyle.xaml;WaterTankStyle.xaml;
 
-False
+True
 
