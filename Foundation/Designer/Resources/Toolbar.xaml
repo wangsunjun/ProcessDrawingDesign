@@ -1,0 +1,238 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:Wss.Foundation">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Wss.Foundation;component/Resources/Shared.xaml" />
+        <ResourceDictionary Source="ToolBarButton.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <ToolBar x:Key="MyToolbar" Height="29">
+        <!--File-->
+        <!--<Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                    Command="{x:Static ApplicationCommands.New}"
+                    ToolTip="新建">
+            <Button.Content>
+                <Image Source="../Images/Operate/GenericDocument.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>-->
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static ApplicationCommands.Open}"
+                ToolTip="打开">
+            <Button.Content>
+                <Image Source="../Images/Operate/OpenFolder.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static ApplicationCommands.Save}"
+                ToolTip="保存">
+            <Button.Content>
+                <Image Source="../Images/Operate/Save.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Separator />
+        <!--Edit-->
+        <!--<Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                 Command="{x:Static ApplicationCommands.Cut}"
+                 ToolTip="剪切">
+            <Button.Content>
+                <Image Source="../Images/Operate/Cut.png" Width="16" Height="16"/>
+            </Button.Content>
+        </Button>-->
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static ApplicationCommands.Copy}"
+                ToolTip="复制">
+            <Button.Content>
+                <Image Source="../Images/Operate/Copy.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static ApplicationCommands.Paste}"
+                ToolTip="粘贴">
+            <Button.Content>
+                <Image Source="../Images/Operate/Paste.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Separator />
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static ApplicationCommands.Undo}"
+                ToolTip="撤销">
+            <Button.Content>
+                <Image Source="../Images/Operate/Undo.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static ApplicationCommands.Redo}"
+                ToolTip="重做">
+            <Button.Content>
+                <Image Source="../Images/Operate/Redo.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static ApplicationCommands.Delete}"
+                ToolTip="删除">
+            <Button.Content>
+                <Image Source="../Images/Operate/Delete.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.UniformWidth}"
+                ToolTip="等宽">
+            <Button.Content>
+                <Image Source="../Images/Operate/ContourWidth.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.UniformHeight}"
+                ToolTip="等高">
+            <Button.Content>
+                <Image Source="../Images/Operate/ContourHeight.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.ChangeBg}"
+                ToolTip="更改背景">
+            <Button.Content>
+                <Image Source="../Images/Operate/changeBG.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Separator />
+
+        <!--Alignment-->
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.AlignLeft}"
+                ToolTip="左对齐">
+            <Button.Content>
+                <Image Source="../Images/Operate/AlignObjectsLeft.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.AlignHorizontalCenters}"
+                ToolTip="水平居中">
+            <Button.Content>
+                <Image Source="../Images/Operate/AlignObjectsCenteredVertical.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.AlignRight}"
+                ToolTip="右对齐">
+            <Button.Content>
+                <Image Source="../Images/Operate/AlignObjectsRight.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.AlignTop}"
+                ToolTip="顶对齐">
+            <Button.Content>
+                <Image Source="../Images/Operate/AlignObjectsTop.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.AlignVerticalCenters}"
+                ToolTip="垂直居中">
+            <Button.Content>
+                <Image Source="../Images/Operate/AlignObjectsCenteredHorizontal.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.AlignBottom}"
+                ToolTip="底对齐">
+            <Button.Content>
+                <Image Source="../Images/Operate/AlignObjectsBottom.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.DistributeHorizontal}"
+                ToolTip="水平均分">
+            <Button.Content>
+                <Image Source="../Images/Operate/DistributeObjectsHorizontal.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.DistributeVertical}"
+                ToolTip="垂直均分">
+            <Button.Content>
+                <Image Source="../Images/Operate/DistributeObjectsVertical.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Separator />
+        <!--Arrange-->
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.Group}"
+                ToolTip="组合">
+            <Button.Content>
+                <Image Source="../Images/Operate/Group.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.Ungroup}"
+                ToolTip="取消组合">
+            <Button.Content>
+                <Image Source="../Images/Operate/Ungroup.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Separator />
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.BringForward}"
+                ToolTip="上移一层">
+            <Button.Content>
+                <Image Source="../Images/Operate/BringForward.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.BringToFront}"
+                ToolTip="置于顶层">
+            <Button.Content>
+                <Image Source="../Images/Operate/BringToFront.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.SendBackward}"
+                ToolTip="下移一层">
+            <Button.Content>
+                <Image Source="../Images/Operate/SendBackward.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.SendToBack}"
+                ToolTip="置于底层">
+            <Button.Content>
+                <Image Source="../Images/Operate/SendToBack.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Separator />
+        <!--Mirror-->
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.MirrorH}"
+                ToolTip="水平翻转">
+            <Button.Content>
+                <Image Source="../Images/Operate/mirrorH.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.MirrorV}"
+                ToolTip="垂直翻转">
+            <Button.Content>
+                <Image Source="../Images/Operate/mirrorV.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.RotateRight}"
+                ToolTip="顺时针">
+            <Button.Content>
+                <Image Source="../Images/Operate/rotateRight.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}"
+                Command="{x:Static s:DesignerCanvas.RotateLeft}"
+                ToolTip="逆时针">
+            <Button.Content>
+                <Image Source="../Images/Operate/rotateLeft.png" Width="16" Height="16" />
+            </Button.Content>
+        </Button>
+        <Separator />
+        <Button Style="{StaticResource ToolBarButtonBaseStyle}" Command="{x:Static s:DesignerCanvas.ConnectDevice}"
+                ToolTip="关联设备/变量">
+            图元关联信息
+        </Button>
+    </ToolBar>
+</ResourceDictionary>

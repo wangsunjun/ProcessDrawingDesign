@@ -1,0 +1,33 @@
+﻿<Window x:Class="TestDesigner.ModeChangeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:testDesigner="clr-namespace:TestDesigner"
+        Title="ModeChangeWindow" Height="80" Width="80" WindowStyle="None" BorderThickness="1" BorderBrush="Blue">
+    <Window.Resources>
+        <Style x:Key="A1Style" TargetType="RadioButton">
+            <Style.Triggers>
+                <DataTrigger
+                    Binding="{Binding RelativeSource={RelativeSource  Mode=FindAncestor,AncestorType={x:Type testDesigner:ModeChangeWindow}}, Path=Mode}"
+                    Value="EDIT">
+                    <Setter Property="IsChecked" Value="true" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="A2Style" TargetType="RadioButton">
+            <Style.Triggers>
+                <DataTrigger
+                    Binding="{Binding RelativeSource={RelativeSource  Mode=FindAncestor,AncestorType={x:Type testDesigner:ModeChangeWindow}}, Path=Mode }"
+                    Value="VIEW">
+                    <Setter Property="IsChecked" Value="true" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <GroupBox Header="模式切换" VerticalAlignment="Top" Height="76" HorizontalAlignment="Left" Width="76">
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+            <RadioButton Style="{StaticResource A1Style}" IsChecked="True" Name="a1" Content="设计" HorizontalAlignment="Center" Margin="6,9,-6,-9" />
+            <RadioButton Style="{StaticResource A2Style}" Name="a2" Content="预览" HorizontalAlignment="Center" Margin="6,30,-6,-30" />
+        </Grid>
+    </GroupBox>
+
+</Window>

@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <DesignerContainers>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>522</Canvas.Left>
+      <Canvas.Top>257</Canvas.Top>
+      <Width>142</Width>
+      <Height>200</Height>
+      <Panel.ZIndex>16</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>97e23167-453d-44fb-8914-1435cd8f5ec1</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.HeatExchanger, Common.Package">
+        <Line.Tag>模型.换热器</Line.Tag>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>164</Canvas.Left>
+      <Canvas.Top>388</Canvas.Top>
+      <Width>405</Width>
+      <Height>132</Height>
+      <Panel.ZIndex>17</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>562f87ba-b211-4a85-a07b-83ff90ebd597</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>616</Canvas.Left>
+      <Canvas.Top>388</Canvas.Top>
+      <Width>405</Width>
+      <Height>132</Height>
+      <Panel.ZIndex>19</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>a5ac0677-dbc6-4d4b-bb1b-32bd419fcd8a</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>225</Canvas.Left>
+      <Canvas.Top>208</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>11</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>973f8bf3-0cf0-437a-abe2-945651a0ed0b</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.TemperatureTransmitter, Common.Package">
+        <Line.Tag>模型.温度变送器</Line.Tag>
+      </DesignerElement>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>252</Canvas.Left>
+      <Canvas.Top>207</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>12</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>3c25dc11-f14e-4c78-b274-bd2ac35fea9e</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PressureTransmitter, Common.Package">
+        <Line.Tag>模型.压力变送器</Line.Tag>
+      </DesignerElement>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>368</Canvas.Left>
+      <Canvas.Top>225</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>13</Panel.ZIndex>
+      <Angle>-90</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>0192a14c-d097-4102-a7f8-2f21864b3911</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.BackwaterValve, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>565</Canvas.Left>
+      <Canvas.Top>193</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>14</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>26909715-56f4-4926-a2e2-a849ac1ef4f1</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Light, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>783</Canvas.Left>
+      <Canvas.Top>238</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>15</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>a15c60fe-4150-4a9f-89de-428fe36e30a4</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.Flowmeter, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>667</Canvas.Left>
+      <Canvas.Top>207</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>20</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>bc8227b8-04df-44c5-a4b8-faaf8eec6a63</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PressureTransmitter, Common.Package">
+        <Line.Tag>模型.压力变送器</Line.Tag>
+      </DesignerElement>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>640</Canvas.Left>
+      <Canvas.Top>208</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>21</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>31e73f38-a21e-4920-a624-63ea4b85eefb</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.TemperatureTransmitter, Common.Package">
+        <Line.Tag>模型.温度变送器</Line.Tag>
+      </DesignerElement>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>321</Canvas.Left>
+      <Canvas.Top>402</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>22</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>cdff59e7-c860-4198-ba5d-7c02098a24e0</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PressureTransmitter, Common.Package">
+        <Line.Tag>模型.压力变送器</Line.Tag>
+      </DesignerElement>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>294</Canvas.Left>
+      <Canvas.Top>403</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>23</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>46ad882a-97e7-4c45-a0d1-db1ab5978337</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.TemperatureTransmitter, Common.Package">
+        <Line.Tag>模型.温度变送器</Line.Tag>
+      </DesignerElement>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>746</Canvas.Left>
+      <Canvas.Top>404</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>25</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>129b81b4-29a9-43b0-92ba-ac6d6980184f</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.TemperatureTransmitter, Common.Package">
+        <Line.Tag>模型.温度变送器</Line.Tag>
+      </DesignerElement>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>773</Canvas.Left>
+      <Canvas.Top>403</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>24</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>e6fb7167-71cb-47bd-85b5-16d123859a3c</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PressureTransmitter, Common.Package">
+        <Line.Tag>模型.压力变送器</Line.Tag>
+      </DesignerElement>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>660</Canvas.Left>
+      <Canvas.Top>425</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>9</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>b85bb436-621f-41f1-9f30-4fd652bb67f9</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PumpTag, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>122</Canvas.Left>
+      <Canvas.Top>234</Canvas.Top>
+      <Width>23</Width>
+      <Height>49</Height>
+      <Panel.ZIndex>10</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>489c793b-afee-4a72-8eb4-918e0fa010bd</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Arrow, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>906</Canvas.Left>
+      <Canvas.Top>213</Canvas.Top>
+      <Width>55</Width>
+      <Height>49</Height>
+      <Panel.ZIndex>26</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>27a852e4-3d94-4192-b612-68534f5cbf5f</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Arrow, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>124</Canvas.Left>
+      <Canvas.Top>435</Canvas.Top>
+      <Width>25</Width>
+      <Height>37</Height>
+      <Panel.ZIndex>8</Panel.ZIndex>
+      <Angle>-180</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>5b6d85e6-c123-469d-a3d6-849d113a52e2</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Arrow, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>685</Canvas.Left>
+      <Canvas.Top>248</Canvas.Top>
+      <Width>23</Width>
+      <Height>49</Height>
+      <Panel.ZIndex>27</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>3588ef56-326d-411f-83c6-b25dcbafdb0b</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Arrow, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>916</Canvas.Left>
+      <Canvas.Top>409</Canvas.Top>
+      <Width>54</Width>
+      <Height>49</Height>
+      <Panel.ZIndex>28</Panel.ZIndex>
+      <Angle>-180</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>229f37b6-23f5-4a60-b322-05e3ab5d21d6</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Arrow, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>664</Canvas.Left>
+      <Canvas.Top>553</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>0</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>1aa5bb87-8b53-4475-b5d3-40673eff9549</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PumpTag, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>639</Canvas.Left>
+      <Canvas.Top>553</Canvas.Top>
+      <Width>28</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>1</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>110eb960-d80f-4681-97d1-ffd450c28c82</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>340</Canvas.Left>
+      <Canvas.Top>538</Canvas.Top>
+      <Width>125</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>2</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>600340e3-6cb2-4c62-aa6d-326361c801ec</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>709</Canvas.Left>
+      <Canvas.Top>551</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>3</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>ae1dcdb5-e47d-4525-82ae-7200bbd63a09</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>760</Canvas.Left>
+      <Canvas.Top>552</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>4</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>42f2c6b3-9385-4b0f-9b3b-828c1c036f09</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.WaterTank, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>808</Canvas.Left>
+      <Canvas.Top>550</Canvas.Top>
+      <Width>114</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>5</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>61ee21ce-e2fc-463a-8d50-9c2aeb80f743</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>918</Canvas.Left>
+      <Canvas.Top>551</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>6</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>6b1dac51-7bae-47d4-8981-1aa3fb3e9c18</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.BackwaterValve2, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>963</Canvas.Left>
+      <Canvas.Top>551</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>7</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>64385913-4c00-4f2a-8cea-b659eb9efa19</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>163</Canvas.Left>
+      <Canvas.Top>233</Canvas.Top>
+      <Width>209</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>0</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>4d6e2519-ab06-48a7-926a-f7d4b3939e9e</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Canvas.Left>412</Canvas.Left>
+      <Canvas.Top>233</Canvas.Top>
+      <Width>159</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>0</Panel.ZIndex>
+      <Angle>0</Angle>
+      <ScaleX>1</ScaleX>
+      <ScaleY>1</ScaleY>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <TagVisible>True</TagVisible>
+      <NamePosition></NamePosition>
+      <ID>bdfef998-ddca-46d0-9af9-e52c947f2e26</ID>
+      <Name></Name>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <IsGroup>False</IsGroup>
+      <DesignerElement Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package" />
+    </DesignerElement>
+  </DesignerContainers>
+</Root>

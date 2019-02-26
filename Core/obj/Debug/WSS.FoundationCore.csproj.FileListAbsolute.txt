@@ -1,0 +1,6 @@
+C:\Users\王绍孙\Desktop\Development\Ecms.Core\bin\Debug\WSS.FoundationCore.dll
+C:\Users\王绍孙\Desktop\Development\Ecms.Core\bin\Debug\WSS.FoundationCore.pdb
+C:\Users\王绍孙\Desktop\Development\Ecms.Core\bin\Debug\OmniLib.dll
+C:\Users\王绍孙\Desktop\Development\Ecms.Core\bin\Debug\log4net.dll
+C:\Users\王绍孙\Desktop\Development\Ecms.Core\obj\Debug\WSS.FoundationCore.dll
+C:\Users\王绍孙\Desktop\Development\Ecms.Core\obj\Debug\WSS.FoundationCore.pdb

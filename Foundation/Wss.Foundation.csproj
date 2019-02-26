@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3DBF2F9-E71E-4B79-B2BE-359A97D8D7B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wss.Foundation</RootNamespace>
+    <AssemblyName>Wss.Foundation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OmniLib">
+      <HintPath>..\Lib\OmniLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AyRadioList.cs" />
+    <Compile Include="Controls\ConfigViewDataTemplateSelector.cs" />
+    <Compile Include="Controls\DesignerContainer.cs" />
+    <Compile Include="Designer\DragThumb.cs" />
+    <Compile Include="Designer\ResizeThumb.cs" />
+    <Compile Include="Controls\UnitOmniProperty.cs" />
+    <Compile Include="Designer\Command\Command.cs" />
+    <Compile Include="Designer\Command\CommandAlignBottom.cs" />
+    <Compile Include="Designer\Command\CommandAlignHorizontalCenter.cs" />
+    <Compile Include="Designer\Command\CommandAlignLeft.cs" />
+    <Compile Include="Designer\Command\CommandAlignRight.cs" />
+    <Compile Include="Designer\Command\CommandAlignTop.cs" />
+    <Compile Include="Designer\Command\CommandBringBack.cs" />
+    <Compile Include="Designer\Command\CommandBringForward.cs" />
+    <Compile Include="Designer\Command\CommandChangeBg.cs" />
+    <Compile Include="Designer\Command\CommandChangeName.cs" />
+    <Compile Include="Designer\Command\CommandCopy.cs" />
+    <Compile Include="Designer\Command\CommandCut.cs" />
+    <Compile Include="Designer\Command\CommandDelete.cs" />
+    <Compile Include="Designer\Command\CommandDeleteBg.cs" />
+    <Compile Include="Designer\Command\CommandDistributeHorizontal.cs" />
+    <Compile Include="Designer\Command\CommandDistributeVertical.cs" />
+    <Compile Include="Designer\Command\CommandDragThumb.cs" />
+    <Compile Include="Designer\Command\CommandDrop.cs" />
+    <Compile Include="Designer\Command\CommandGroup.cs" />
+    <Compile Include="Designer\Command\CommandGroupOperate.cs" />
+    <Compile Include="Designer\Command\CommandHidName.cs" />
+    <Compile Include="Designer\Command\CommandLock.cs" />
+    <Compile Include="Designer\Command\CommandManager.cs" />
+    <Compile Include="Designer\Command\CommandMirrorH.cs" />
+    <Compile Include="Designer\Command\CommandMirrorV.cs" />
+    <Compile Include="Designer\Command\CommandOpen.cs" />
+    <Compile Include="Designer\Command\CommandPaste.cs" />
+    <Compile Include="Designer\Command\CommandPolyline.cs" />
+    <Compile Include="Designer\Command\CommandrAlignVerticalCenter.cs" />
+    <Compile Include="Designer\Command\CommandResizeThumb.cs" />
+    <Compile Include="Designer\Command\CommandRotateLeft.cs" />
+    <Compile Include="Designer\Command\CommandRotateRight.cs" />
+    <Compile Include="Designer\Command\CommandShowName.cs" />
+    <Compile Include="Designer\Command\CommandToBack.cs" />
+    <Compile Include="Designer\Command\CommandToFront.cs" />
+    <Compile Include="Designer\Command\CommandUnGroup.cs" />
+    <Compile Include="Designer\Command\CommandUniformHeight.cs" />
+    <Compile Include="Designer\Command\CommandUniformWidth.cs" />
+    <Compile Include="DesignArea.cs" />
+    <Compile Include="DesignerCanvas.Commands.cs" />
+    <Compile Include="DesignerCanvas.cs" />
+    <Compile Include="Designer\PropertyView.cs" />
+    <Compile Include="Designer\DragResizeAdorner.cs" />
+    <Compile Include="Designer\Resources\DragAdornerThumb.xaml.cs">
+      <DependentUpon>DragAdornerThumb.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Resources\ResizeAdornerThumb.xaml.cs">
+      <DependentUpon>ResizeAdornerThumb.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\RubberbandAdorner.cs" />
+    <Compile Include="Designer\SelectionService.cs" />
+    <Compile Include="Designer\SelectionThumb.cs" />
+    <Compile Include="Designer\Toolbox.cs" />
+    <Compile Include="Designer\ToolboxViewItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\DragAdornerThumb.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designer\Resources\ResizeAdornerThumb.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\DesignArea.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\ContextMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\AlignObjectsBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\AlignObjectsCenteredHorizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\AlignObjectsCenteredVertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\AlignObjectsLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\AlignObjectsRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\AlignObjectsTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\BringForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\BringToFront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\changeBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\ContourHeight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\ContourWidth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\DistributeObjectsHorizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\DistributeObjectsVertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\GenericDocument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\mirrorH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\mirrorV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\OpenFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\PasteBig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\rotateLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\rotateRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\SendBackward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\SendToBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Ungroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\Unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Designer\Images\Operate\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\ToolboxViewItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\Toolbox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\Toolbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\PropertyView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\Resources\DesignerContainer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\Brushes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\Expander.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\ScrollBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\ScrollViewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Resources\Shared.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\ToolBarButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Designer\Resources\ToolTip.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Themes\Resource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Wss.FoundationCore.csproj">
+      <Project>{fe6a012c-c419-4cf3-b523-73fe22ecf48e}</Project>
+      <Name>Wss.FoundationCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="TestDesigner.DesignWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestDesigner"
+        mc:Ignorable="d"
+      xmlns:Designer="clr-namespace:Wss.Foundation;assembly=Wss.Foundation" 
+        Title="DesignWindow" Height="768" Width="1430">
+    <Grid>
+        <DockPanel>
+            <Border DockPanel.Dock="Right" Background="#FFC1BCBC">
+                <Designer:DesignArea DesignMode="EDIT" x:Name="designerArea" CanvasWidth="1366" CanvasHeight="768" />
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>

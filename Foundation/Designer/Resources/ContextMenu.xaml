@@ -1,0 +1,151 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="clr-namespace:Wss.Foundation">
+    <ContextMenu x:Key="DesignerContainerContextMenu">
+        <MenuItem Header="剪切" Command="{x:Static ApplicationCommands.Cut}">
+            <MenuItem.Icon>
+                <Image Source="../Images/Operate/Cut.png" Width="16" />
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Header="复制" Command="{x:Static ApplicationCommands.Copy}">
+            <MenuItem.Icon>
+                <Image Source="../Images/Operate/Copy.png" Width="16" />
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Header="粘贴" Command="{x:Static ApplicationCommands.Paste}">
+            <MenuItem.Icon>
+                <Image Source="../Images/Operate/Paste.png" Width="16" />
+            </MenuItem.Icon>
+        </MenuItem>
+        <MenuItem Header="删除" Command="{x:Static ApplicationCommands.Delete}">
+            <MenuItem.Icon>
+                <Image Source="../Images/Operate/Delete.png" Width="16" />
+            </MenuItem.Icon>
+        </MenuItem>
+
+        <Separator />
+        <MenuItem Header="加锁">
+            <MenuItem Header="锁定" Command="{x:Static s:DesignerCanvas.Lock}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/Lock.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="解锁" Command="{x:Static s:DesignerCanvas.UnLock}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/Unlock.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+        </MenuItem>
+        <MenuItem Header="组合">
+            <MenuItem Header="组合" Command="{x:Static s:DesignerCanvas.Group}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/Group.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="取消组合" Command="{x:Static s:DesignerCanvas.Ungroup}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/Ungroup.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+        </MenuItem>
+        <MenuItem Header="叠放次序">
+            <MenuItem Header="上移一层" Command="{x:Static s:DesignerCanvas.BringForward}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/BringForward.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="置于顶层" Command="{x:Static s:DesignerCanvas.BringToFront}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/BringToFront.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="下移一层" Command="{x:Static s:DesignerCanvas.SendBackward}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/SendBackward.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="置于底层" Command="{x:Static s:DesignerCanvas.SendToBack}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/SendToBack.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+        </MenuItem>
+        <MenuItem Header="对齐">
+            <MenuItem Header="左对齐" Command="{x:Static s:DesignerCanvas.AlignLeft}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/AlignObjectsLeft.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="水平居中" Command="{x:Static s:DesignerCanvas.AlignHorizontalCenters}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/AlignObjectsCenteredHorizontal.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="右对齐" Command="{x:Static s:DesignerCanvas.AlignRight}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/AlignObjectsRight.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="水平均分" Command="{x:Static s:DesignerCanvas.DistributeHorizontal}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/DistributeObjectsHorizontal.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="顶对齐" Command="{x:Static s:DesignerCanvas.AlignTop}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/AlignObjectsTop.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="垂直居中" Command="{x:Static s:DesignerCanvas.AlignVerticalCenters}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/AlignObjectsCenteredVertical.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="底对齐" Command="{x:Static s:DesignerCanvas.AlignBottom}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/AlignObjectsBottom.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="垂直均分" Command="{x:Static s:DesignerCanvas.DistributeVertical}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/DistributeObjectsVertical.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+        </MenuItem>
+        <MenuItem Header="翻转">
+            <MenuItem Header="水平翻转" Command="{x:Static s:DesignerCanvas.MirrorH}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/mirrorH.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="垂直翻转" Command="{x:Static s:DesignerCanvas.MirrorV}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/mirrorV.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+        </MenuItem>
+        <MenuItem Header="旋转">
+            <MenuItem Header="顺时针90度" Command="{x:Static s:DesignerCanvas.RotateRight}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/rotateRight.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="逆时针90度" Command="{x:Static s:DesignerCanvas.RotateLeft}">
+                <MenuItem.Icon>
+                    <Image Source="../Images/Operate/rotateLeft.png" Width="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+        </MenuItem>
+        <MenuItem Header="尺寸设置">
+            <MenuItem Header="等宽" Command="{x:Static s:DesignerCanvas.UniformWidth}" />
+            <MenuItem Header="等高" Command="{x:Static s:DesignerCanvas.UniformHeight}" />
+        </MenuItem>
+        <MenuItem Header="名称显示">
+            <MenuItem Header="显示" Command="{x:Static s:DesignerCanvas.ShowName}" />
+            <MenuItem Header="隐藏" Command="{x:Static s:DesignerCanvas.HideName}" />
+        </MenuItem>
+        <MenuItem Header="选择同类图元" Command="{x:Static s:DesignerCanvas.SelectSameType}" />
+    </ContextMenu>
+
+</ResourceDictionary>

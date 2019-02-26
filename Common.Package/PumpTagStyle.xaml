@@ -1,0 +1,165 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                    xmlns:local="clr-namespace:Common.Package" >
+    
+    <Style x:Key="StyleKeyPumpTag" TargetType="local:PumpTag">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>
+                        <Viewbox>
+                            <Canvas x:Name="泵" ClipToBounds="True" HorizontalAlignment="Left" Height="42" UseLayoutRounding="False" VerticalAlignment="Top" Width="42">
+    							<Canvas x:Name="组_1" Height="38" Canvas.Left="2" Canvas.Top="2" Width="38">
+    								<Path StrokeThickness="2" Stroke="#044f9c" x:Name="形状_15" Data="F1M18.99,36.5C9.325,36.5 1.49,28.665 1.49,19 1.49,9.335 9.325,1.5 18.99,1.5 28.655,1.5 36.49,9.335 36.49,19 36.49,28.665 28.655,36.5 18.99,36.5z" Height="38" Canvas.Left="0" Canvas.Top="0" Width="38">
+    				
+    								</Path>
+    								<Path StrokeThickness="2" Stroke="#044f9c" x:Name="形状_16" Data="F1M1.667,15.992C1.667,15.992 25.929,1.245 25.929,1.245 25.929,1.245 25.929,30.735 25.929,30.735 25.929,30.735 1.667,15.992 1.667,15.992z" Height="32" Canvas.Left="1" Canvas.Top="3" Width="27">
+    				
+    								</Path>
+    							</Canvas>
+    						</Canvas>
+                        </Viewbox>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--拖上来的状态默认是停止stop状态，颜色是#044f9c-->
+    <Style TargetType="local:PumpTag">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>
+                        <Viewbox>
+                            <Canvas x:Name="泵" ClipToBounds="True" HorizontalAlignment="Left" Height="42" UseLayoutRounding="False" VerticalAlignment="Top" Width="42">
+    							<Canvas x:Name="组_1" Height="38" Canvas.Left="2" Canvas.Top="2" Width="38">
+                                    <Path StrokeThickness="2" Stroke="#044f9c" x:Name="形状_15" Data="F1M18.99,36.5C9.325,36.5 1.49,28.665 1.49,19 1.49,9.335 9.325,1.5 18.99,1.5 28.655,1.5 36.49,9.335 36.49,19 36.49,28.665 28.655,36.5 18.99,36.5z" Height="38" Canvas.Left="0" Canvas.Top="0" Width="38">
+    				
+    								</Path>
+                                    <Path StrokeThickness="2" Stroke="#044f9c" x:Name="形状_16" Data="F1M1.667,15.992C1.667,15.992 25.929,1.245 25.929,1.245 25.929,1.245 25.929,30.735 25.929,30.735 25.929,30.735 1.667,15.992 1.667,15.992z" Height="32" Canvas.Left="1" Canvas.Top="3" Width="27">
+    				
+    								</Path>
+    							</Canvas>
+    						</Canvas>
+                        </Viewbox>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style  x:Key="StyleKeyPumpStopTag"  TargetType="local:PumpTag">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>
+                        <Viewbox>
+							<Canvas x:Name="泵" ClipToBounds="True" HorizontalAlignment="Left" Height="42" UseLayoutRounding="False" VerticalAlignment="Top" Width="42">
+    							<Canvas x:Name="组_1" Height="38" Canvas.Left="2" Canvas.Top="2" Width="38">
+    								<Path StrokeThickness="2" Stroke="#044f9c" x:Name="形状_15" Data="F1M18.99,36.5C9.325,36.5 1.49,28.665 1.49,19 1.49,9.335 9.325,1.5 18.99,1.5 28.655,1.5 36.49,9.335 36.49,19 36.49,28.665 28.655,36.5 18.99,36.5z" Height="38" Canvas.Left="0" Canvas.Top="0" Width="38">
+    				
+    								</Path>
+    								<Path StrokeThickness="2" Stroke="#044f9c" x:Name="形状_16" Data="F1M1.667,15.992C1.667,15.992 25.929,1.245 25.929,1.245 25.929,1.245 25.929,30.735 25.929,30.735 25.929,30.735 1.667,15.992 1.667,15.992z" Height="32" Canvas.Left="1" Canvas.Top="3" Width="27">
+    				
+    								</Path>
+    							</Canvas>
+    						</Canvas>
+                        </Viewbox>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="StyleKeyPumpRunningTag" TargetType="local:PumpTag">
+        <Style.Resources>
+            <Storyboard RepeatBehavior="Forever" x:Key="Storyboard1">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="{x:Null}">
+                	<EasingDoubleKeyFrame KeyTime="0:0:1" Value="360"/>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+        </Style.Resources>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                <BeginStoryboard x:Name="Storyboard1_BeginStoryboard" Storyboard="{StaticResource Storyboard1}"/>
+            </EventTrigger>
+            <Trigger Property="RunningState" Value="0"/>
+        </Style.Triggers>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>
+                        <Viewbox>
+                           <Canvas x:Name="泵" ClipToBounds="True" HorizontalAlignment="Left" Height="42" UseLayoutRounding="False" VerticalAlignment="Top" Width="42">
+    							<Canvas x:Name="组_1" Height="38" Canvas.Left="2" Canvas.Top="2" Width="38">
+    								<Path StrokeThickness="2" Stroke="Green" x:Name="形状_15" Data="F1M18.99,36.5C9.325,36.5 1.49,28.665 1.49,19 1.49,9.335 9.325,1.5 18.99,1.5 28.655,1.5 36.49,9.335 36.49,19 36.49,28.665 28.655,36.5 18.99,36.5z" Height="38" Canvas.Left="0" Canvas.Top="0" Width="38">
+    				
+    								</Path>
+    								<Path StrokeThickness="2" Stroke="Green" x:Name="形状_16" Data="F1M1.667,15.992C1.667,15.992 25.929,1.245 25.929,1.245 25.929,1.245 25.929,30.735 25.929,30.735 25.929,30.735 1.667,15.992 1.667,15.992z" Height="32" Canvas.Left="1" Canvas.Top="3" Width="27">
+    				
+    								</Path>
+    							</Canvas>
+    						</Canvas>
+                        </Viewbox>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+        <Setter Property="RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+   
+    <Style x:Key="StyleKeyPumpWarningTag"  TargetType="local:PumpTag">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>
+                        <Viewbox>
+							<Canvas x:Name="泵" ClipToBounds="True" HorizontalAlignment="Left" Height="42" UseLayoutRounding="False" VerticalAlignment="Top" Width="42">
+    							<Canvas x:Name="组_1" Height="38" Canvas.Left="2" Canvas.Top="2" Width="38">
+    								<Path StrokeThickness="2" Stroke="Yellow" x:Name="形状_15" Data="F1M18.99,36.5C9.325,36.5 1.49,28.665 1.49,19 1.49,9.335 9.325,1.5 18.99,1.5 28.655,1.5 36.49,9.335 36.49,19 36.49,28.665 28.655,36.5 18.99,36.5z" Height="38" Canvas.Left="0" Canvas.Top="0" Width="38">
+ 
+                                        <Path.Triggers>
+                                            <EventTrigger RoutedEvent="Path.Loaded">
+                                                <BeginStoryboard >
+                                                    <Storyboard RepeatBehavior="Forever" Duration="0:0:1" >
+                                                        <ColorAnimation AutoReverse="False" IsAdditive="False"  Storyboard.TargetName="形状_15" 
+                                                                        Storyboard.TargetProperty="(Path.Stroke).(SolidColorBrush.Color)"
+                                                                        From="Yellow" To="Red" />
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </EventTrigger>
+                                        </Path.Triggers>
+    								</Path>
+    								<Path StrokeThickness="2" Stroke="Yellow" x:Name="形状_16" Data="F1M1.667,15.992C1.667,15.992 25.929,1.245 25.929,1.245 25.929,1.245 25.929,30.735 25.929,30.735 25.929,30.735 1.667,15.992 1.667,15.992z" Height="32" Canvas.Left="1" Canvas.Top="3" Width="27">
+    									<Path.Triggers>
+                                            <EventTrigger RoutedEvent="Path.Loaded">
+                                                <BeginStoryboard>
+                                                    <Storyboard RepeatBehavior="Forever" Duration="0:0:1" >
+                                                        <ColorAnimation AutoReverse="False" IsAdditive="False"  Storyboard.TargetName="形状_16" 
+                                                                        Storyboard.TargetProperty="(Path.Stroke).(SolidColorBrush.Color)"
+                                                                        From="Yellow" To="Red" />
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </EventTrigger>
+                                        </Path.Triggers>
+    								</Path>
+    							</Canvas>
+    						</Canvas>
+                        </Viewbox>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <DesignerContainers>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>换热器</Name>
+      <Canvas.Left>522</Canvas.Left>
+      <Canvas.Top>257</Canvas.Top>
+      <Width>142</Width>
+      <Height>200</Height>
+      <Panel.ZIndex>20</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>ba33c2e8-f1d9-4d37-9d54-4d7a4800d720</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.HeatExchanger, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>线条</Name>
+      <Canvas.Left>164</Canvas.Left>
+      <Canvas.Top>388</Canvas.Top>
+      <Width>405</Width>
+      <Height>132</Height>
+      <Panel.ZIndex>21</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>1cfe47ec-9877-42fa-a0a5-afc24ebd5e66</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package">
+        <LineColor>#FF0000FF</LineColor>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>线条</Name>
+      <Canvas.Left>616</Canvas.Left>
+      <Canvas.Top>388</Canvas.Top>
+      <Width>405</Width>
+      <Height>132</Height>
+      <Panel.ZIndex>22</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>6e170c08-6fe0-47e1-b47f-60d315ef8285</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package">
+        <LineColor>#FF0000FF</LineColor>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>温度变送器</Name>
+      <Canvas.Left>225</Canvas.Left>
+      <Canvas.Top>208</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>15</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>8aaba731-f66a-4b5b-8a16-0190969879b4</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.TemperatureTransmitter, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>压力变送器</Name>
+      <Canvas.Left>252</Canvas.Left>
+      <Canvas.Top>207</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>16</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>a105c10f-d3e8-43bb-9f00-823077ee4986</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PressureTransmitter, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>电磁阀</Name>
+      <Canvas.Left>370</Canvas.Left>
+      <Canvas.Top>231</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>17</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>-90</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>da50b371-4892-4650-885e-b619c7fdac87</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.BackwaterValve, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>指示灯</Name>
+      <Canvas.Left>567</Canvas.Left>
+      <Canvas.Top>190</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>18</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>0275c933-36c8-4dea-8e17-80ba2e05d789</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Light, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>流量计</Name>
+      <Canvas.Left>781</Canvas.Left>
+      <Canvas.Top>233</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>19</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>35f79a73-10fd-4c99-84b6-b46668cc99a4</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.Flowmeter, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>压力变送器</Name>
+      <Canvas.Left>667</Canvas.Left>
+      <Canvas.Top>207</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>23</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>b035b907-dce6-4857-a541-71ddef550559</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PressureTransmitter, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>温度变送器</Name>
+      <Canvas.Left>640</Canvas.Left>
+      <Canvas.Top>208</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>24</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>8fd33e38-b719-49f1-9af9-dc2e1f417b77</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.TemperatureTransmitter, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>压力变送器</Name>
+      <Canvas.Left>321</Canvas.Left>
+      <Canvas.Top>402</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>25</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>4d0be33c-26f1-44aa-a005-2a038d9350e9</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PressureTransmitter, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>温度变送器</Name>
+      <Canvas.Left>294</Canvas.Left>
+      <Canvas.Top>403</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>26</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>a29358e0-e3ca-4b7d-b59b-88f27ca2570d</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.TemperatureTransmitter, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>温度变送器</Name>
+      <Canvas.Left>746</Canvas.Left>
+      <Canvas.Top>404</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>28</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>3a58586d-4ade-45be-9de4-301d25287636</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.TemperatureTransmitter, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>压力变送器</Name>
+      <Canvas.Left>773</Canvas.Left>
+      <Canvas.Top>403</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>27</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>deb67f8e-8609-4b41-8a3d-fa36dd12e11a</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PressureTransmitter, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>泵</Name>
+      <Canvas.Left>660</Canvas.Left>
+      <Canvas.Top>425</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>13</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>b18733c0-6e70-468c-b701-75bb46fd7873</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PumpTag, Common.Package">
+        <RunningState ID="10010008">1</RunningState>
+        <RunningStateString ID="4d444c95-2200-45fb-b5ce-e0fc01096d55">222</RunningStateString>
+        <IsRunning ID="bab5a2ed-b7ca-46e8-ae0f-d702f032a8a5">True</IsRunning>
+        <IsFault ID="677c120a-eb91-4e79-8181-30c74d14c63c">True</IsFault>
+        <IsRemote ID="d5064ff0-b78b-4e4e-9d9c-bccb41dc0108">True</IsRemote>
+        <IsAuto ID="4db64c95-2200-45fb-b5ce-e0fc01096d55">True</IsAuto>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement  Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <BaseContainer.ID>b0a14d11-e8f9-4438-8078-4715c3695f08</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <ScaleX>1</ScaleX>
+      <Angle>0</Angle>
+      <ScaleY>1</ScaleY>
+      <Name>一次供水压力</Name>
+      <Canvas.Left>121</Canvas.Left>
+      <Canvas.Top>27</Canvas.Top>
+      <Width>153</Width>
+      <Height>68</Height>
+      <Panel.ZIndex>0</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.RunaLabel, Common.Package">
+        <TextValue ID="10010011">静态文字</TextValue>
+        <Background ID="b3a77557-f968-4ea8-92f9-5fe470b2e770">#00FFFFFF</Background>
+        <Foreground ID="09a6ac6e-bf96-4d43-8795-1273e0d06c18">#FF000000</Foreground>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>箭头</Name>
+      <Canvas.Left>122</Canvas.Left>
+      <Canvas.Top>234</Canvas.Top>
+      <Width>23</Width>
+      <Height>49</Height>
+      <Panel.ZIndex>14</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>c676b18a-40b0-46f5-8f3a-56d5325223f0</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Arrow, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>箭头</Name>
+      <Canvas.Left>924</Canvas.Left>
+      <Canvas.Top>209</Canvas.Top>
+      <Width>55</Width>
+      <Height>49</Height>
+      <Panel.ZIndex>29</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>3c6365fd-d66b-4740-a1ee-54c75e724a35</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PumpTag, Common.Package">
+        <RunningState ID="10010009">1</RunningState>
+        <RunningStateString ID="4d444c95-2200-45fb-b5ce-e0fc01096d55">222</RunningStateString>
+        <IsRunning ID="bab5a2ed-b7ca-46e8-ae0f-d702f032a8a5">True</IsRunning>
+        <IsFault ID="677c120a-eb91-4e79-8181-30c74d14c63c">True</IsFault>
+        <IsRemote ID="d5064ff0-b78b-4e4e-9d9c-bccb41dc0108">True</IsRemote>
+        <IsAuto ID="4db64c95-2200-45fb-b5ce-e0fc01096d55">True</IsAuto>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>箭头</Name>
+      <Canvas.Left>124</Canvas.Left>
+      <Canvas.Top>435</Canvas.Top>
+      <Width>25</Width>
+      <Height>37</Height>
+      <Panel.ZIndex>12</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>-180</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>cade402c-a04b-4b3a-83fc-df322f807213</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Arrow, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>箭头</Name>
+      <Canvas.Left>916</Canvas.Left>
+      <Canvas.Top>409</Canvas.Top>
+      <Width>54</Width>
+      <Height>49</Height>
+      <Panel.ZIndex>30</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>-180</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>e94d6cd5-c1b0-457b-89d8-da99e7be1d7a</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Arrow, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>泵</Name>
+      <Canvas.Left>664</Canvas.Left>
+      <Canvas.Top>553</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>0</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>734213e7-656a-4658-8029-21e8cf03280c</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PumpTag, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>线条</Name>
+      <Canvas.Left>639</Canvas.Left>
+      <Canvas.Top>553</Canvas.Top>
+      <Width>28</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>5</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>2104dc5c-bf29-47bd-822d-104bf990e212</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package">
+        <LineColor>#FF0000FF</LineColor>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>线条</Name>
+      <Canvas.Left>615</Canvas.Left>
+      <Canvas.Top>452</Canvas.Top>
+      <Width>50</Width>
+      <Height>125</Height>
+      <Panel.ZIndex>6</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>90</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>3625f961-5da3-4635-b86a-edf8b1dec71f</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package">
+        <LineColor>#FF0000FF</LineColor>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>线条</Name>
+      <Canvas.Left>709</Canvas.Left>
+      <Canvas.Top>551</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>7</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>09582d59-f9e8-46ff-bd62-fe6c1665d670</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package">
+        <LineColor>#FF0000FF</LineColor>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>水箱</Name>
+      <Canvas.Left>760</Canvas.Left>
+      <Canvas.Top>552</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>8</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>277d636f-7fe6-46aa-a37b-ad1245453d94</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.WaterTank, Common.Package">
+        <RunningState ID="2dfecdd9-0ef6-4bcf-8413-1fb8919edca4">0</RunningState>
+        <Liquidlevel ID="10010040">0</Liquidlevel>
+        <LiquidHighWarn ID="10010043">1</LiquidHighWarn>
+        <LiquidLowWarn ID="10010044">0</LiquidLowWarn>
+        <LiquidHighWarnSet ID="10010041">0</LiquidHighWarnSet>
+        <LiquidLowWarnSet ID="10010042">0</LiquidLowWarnSet>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>线条</Name>
+      <Canvas.Left>808</Canvas.Left>
+      <Canvas.Top>550</Canvas.Top>
+      <Width>114</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>9</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>b570a94c-d15b-455b-a13b-b10b0d9df824</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package">
+        <LineColor>#FF0000FF</LineColor>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>温控阀</Name>
+      <Canvas.Left>918</Canvas.Left>
+      <Canvas.Top>551</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>10</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>03049590-d9fe-4d2d-b2e2-6b56e746995b</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.BackwaterValve2, Common.Package" />
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>线条</Name>
+      <Canvas.Left>963</Canvas.Left>
+      <Canvas.Top>551</Canvas.Top>
+      <Width>50</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>11</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>True</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>2b4ce646-4797-4cb8-a6d3-845a3ebf3c6a</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package">
+        <LineColor>#FF0000FF</LineColor>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>线条</Name>
+      <Canvas.Left>163</Canvas.Left>
+      <Canvas.Top>233</Canvas.Top>
+      <Width>209</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>1</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>80e5d2f1-fd1e-4ada-bd14-e3b8067b9e74</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package">
+        <LineColor>#FFFF0000</LineColor>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>线条</Name>
+      <Canvas.Left>405</Canvas.Left>
+      <Canvas.Top>233</Canvas.Top>
+      <Width>166</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>2</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>027b2ff9-b8ed-4895-85c6-e5d1fa65c517</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package">
+        <LineColor>#FFFF0000</LineColor>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>线条</Name>
+      <Canvas.Left>613</Canvas.Left>
+      <Canvas.Top>233</Canvas.Top>
+      <Width>171</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>3</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>4cf64874-5975-4d2a-a82a-284463602c06</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package">
+        <LineColor>#FFFF0000</LineColor>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>线条</Name>
+      <Canvas.Left>830</Canvas.Left>
+      <Canvas.Top>233</Canvas.Top>
+      <Width>190</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>4</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>d0f507ac-e4f0-4dc5-beec-a92e8b27e81e</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.Line, Common.Package">
+        <LineColor>#FFFF0000</LineColor>
+      </DesignerItemControl>
+    </DesignerElement>
+    <DesignerElement Version="1.0" Type="Wss.Foundation.Controls.DesignerContainer, Wss.Foundation">
+      <Name>文本</Name>
+      <Canvas.Left>413</Canvas.Left>
+      <Canvas.Top>611</Canvas.Top>
+      <Width>184</Width>
+      <Height>50</Height>
+      <Panel.ZIndex>0</Panel.ZIndex>
+      <ItemOpacity>1</ItemOpacity>
+      <LockDesign>False</LockDesign>
+      <WindowTip>False</WindowTip>
+      <NameVisible>False</NameVisible>
+      <NamePosition></NamePosition>
+      <Angle>0</Angle>
+      <BaseContainer.ScaleX>1</BaseContainer.ScaleX>
+      <BaseContainer.ScaleY>1</BaseContainer.ScaleY>
+      <BaseContainer.ID>f3da1ace-f90f-44bd-b6ca-b3f4c640494f</BaseContainer.ID>
+      <BaseContainer.ParentID>00000000-0000-0000-0000-000000000000</BaseContainer.ParentID>
+      <BaseContainer.IsGroup>False</BaseContainer.IsGroup>
+      <DesignerItemControl Version="1.0" Type="Common.Package.PublicControl.RunaLabel, Common.Package" />
+    </DesignerElement>
+
+  </DesignerContainers>
+</Root>

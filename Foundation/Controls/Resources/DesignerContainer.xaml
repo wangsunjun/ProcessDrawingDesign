@@ -1,0 +1,358 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:Wss.Foundation.Controls"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+
+    <SolidColorBrush x:Key="TabCloseButton.Font.Hover.Brush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="TabCloseButton.Background.Hover.Brush" Color="#FFE07476"/>
+    <SolidColorBrush x:Key="TabCloseButton.Background.Pressed.Brush" Color="#FFED5152"/>
+    <Style x:Key="CloseButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" CornerRadius="0" Background="{TemplateBinding Background}" BorderThickness="0" BorderBrush="{TemplateBinding BorderBrush}" Width="32" Height="32" SnapsToDevicePixels="True">
+                        <Grid Width="20" Height="20" Margin="8,9,0,0">
+                            <Path x:Name="path1" Stroke="#FF7F8891" Data="M0,0 L8,8" StrokeThickness="1" />
+                            <Path x:Name="path2" Stroke="#FF7F8891" Data="M8,0 L0,8" StrokeThickness="1" />
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{StaticResource TabCloseButton.Background.Hover.Brush}"/>
+                            <Setter Property="Stroke" TargetName="path1" Value="{StaticResource TabCloseButton.Font.Hover.Brush}"/>
+                            <Setter Property="Stroke" TargetName="path2" Value="{StaticResource TabCloseButton.Font.Hover.Brush}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{StaticResource TabCloseButton.Background.Pressed.Brush}"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <s:NumberConverter x:Key="NumberConverter1" PlusValue="-1"/>
+    <s:InfoViewPropertysVisibilityConverter x:Key="InfoViewPropertysVisibilityConverter1"/>
+
+    <!-- DesignerItem Style -->
+    <Style TargetType="{x:Type s:DesignerContainer}">
+        <Setter Property="MinWidth" Value="1" />
+        <Setter Property="MinHeight" Value="1" />
+        <Setter Property="RenderTransformOrigin" Value="0.5,0.5" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type s:DesignerContainer}">
+
+
+                    <Grid Name="grd">
+                        <Grid DataContext="{Binding RelativeSource={RelativeSource TemplatedParent}}" 
+                              Background="#00FFFFFF">
+                            <Grid.ToolTip >
+                                <ToolTip   Opacity="{Binding RelativeSource={RelativeSource TemplatedParent},Path=InfoViewPropertys,Converter={StaticResource InfoViewPropertysVisibilityConverter1}}"  HasDropShadow="false" x:Name="gridTooltip" BorderThickness="0"  Background="Transparent" >
+                                    <ListBox  Background="Transparent" Margin="-11,-6,-6,-6" 
+                                                ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent},Path=InfoViewPropertys}"
+                                                HorizontalAlignment="Stretch" BorderThickness="0" MinWidth="200" x:Name="gridTooltipListBox" >
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid Margin="0,0,0,0"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#F2F2F2">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <TextBlock VerticalAlignment="Center" Margin="5" ><Run Text="{Binding Name,Mode=OneWay,StringFormat={}{0}:}"/></TextBlock>
+                                                    <Border Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="1,0,0,0"   BorderBrush="#C0C0BF">
+                                                        <TextBlock VerticalAlignment="Center" Margin="5" HorizontalAlignment="Left">
+                                                            <TextBlock.Text>
+                                                                <MultiBinding StringFormat="{}{0} {1}">
+                                                                    <Binding Path="Value" Mode="OneWay" ></Binding>
+                                                                    <Binding Path="UnitSymbol" Mode="OneWay"></Binding>
+                                                                </MultiBinding>
+                                                            </TextBlock.Text>
+                                                        </TextBlock>
+                                                    </Border>
+                                                    <!--<TextBox  IsReadOnly="True" Background="Transparent" Margin="-1" Padding="5,0,0,0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="{Binding Value,Mode=OneWay}" BorderThickness="1,0,0,0"  BorderBrush="#C0C0BF" />-->
+                                                    <!--<TextBlock VerticalAlignment="Center" Margin="4,4,6,4"><Run Text="Hz"/></TextBlock>-->
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="Padding" Value="0"/>
+                                                <Setter Property="Template" >
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                                            <Border Height="32" Margin="5,0,0,0" Name="SkinNavBorder"  BorderThickness="1" BorderBrush="#C0C0BF" Background="Transparent">
+                                                                <ContentPresenter />
+                                                            </Border>
+                                                            <ControlTemplate.Triggers>
+                                                                <!--<Trigger Property="ListBoxItem.IsSelected" Value="True">
+                                                                            <Setter Property="BorderBrush" TargetName="SkinNavBorder" Value="red"></Setter>
+                                                                        </Trigger>-->
+                                                                <!--<MultiTrigger>
+                                                                            <MultiTrigger.Conditions>
+                                                                                <Condition Property="ListBoxItem.IsMouseOver" Value="True"></Condition>
+                                                                                <Condition Property="ListBoxItem.IsSelected" Value="False"></Condition>
+                                                                            </MultiTrigger.Conditions>
+                                                                            <Setter Property="BorderBrush" TargetName="SkinNavBorder" Value="blue"></Setter>
+                                                                        </MultiTrigger>-->
+                                                            </ControlTemplate.Triggers>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
+                                    </ListBox>
+                                </ToolTip>
+                            </Grid.ToolTip>
+
+                            <ContentPresenter
+                                    x:Name="PART_ContentPresenter"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Stretch"
+                                    Content="{TemplateBinding ContentControl.Content}"
+                                    Margin="{TemplateBinding ContentControl.Padding}" />
+                            <Rectangle Fill="Transparent" />
+                        </Grid>
+                        <TextBlock Name="tbTag"
+                                       Text="{Binding RelativeSource={RelativeSource TemplatedParent},Path=Name}"
+                                       IsHitTestVisible="False" Foreground="Black"  
+                                       VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="-20" Visibility="Visible" />
+                        <Canvas>
+                            <Border x:Name="PART_TopLeftArea"  Canvas.Left="{Binding ActualWidth,RelativeSource={RelativeSource Self},Converter={StaticResource NumberConverter1}}" Canvas.Top="{Binding ActualHeight,RelativeSource={RelativeSource Self},Converter={StaticResource NumberConverter1}}"   Background="#00FFFFFF" Visibility="Collapsed">
+                                <ListBox Background="Transparent"
+                                                ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent},Path=ModeViewPropertys}"
+                                                HorizontalAlignment="Stretch" BorderThickness="0" MinWidth="60">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#F2F2F2">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Border Grid.Column="0"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                                                    <TextBlock VerticalAlignment="Center" Margin="5" HorizontalAlignment="Left">
+                                                        <TextBlock.Text>
+                                                            <MultiBinding StringFormat="{}{0} {1}">
+                                                                <Binding Path="Value" Mode="OneWay" ></Binding>
+                                                                <Binding Path="UnitSymbol" Mode="OneWay"></Binding>
+                                                            </MultiBinding>
+                                                        </TextBlock.Text>
+                                                    </TextBlock>
+                                                </Border>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                    <ListBox.ItemContainerStyle>
+                                        <Style TargetType="ListBoxItem">
+                                            <Setter Property="Padding" Value="0"/>
+                                            <Setter Property="Template" >
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                                        <Border Height="28" Name="SkinNavBorder"  BorderThickness="1" BorderBrush="#C0C0BF" Background="Transparent">
+                                                            <ContentPresenter />
+                                                        </Border>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </ListBox.ItemContainerStyle>
+
+                                </ListBox>
+
+                            </Border>
+                            <Border x:Name="PART_TopRightArea" Canvas.Right="{Binding ActualWidth,RelativeSource={RelativeSource Self},Converter={StaticResource NumberConverter1}}" Canvas.Top="{Binding ActualHeight,RelativeSource={RelativeSource Self},Converter={StaticResource NumberConverter1}}"   Background="#00FFFFFF" Grid.Column="2" Grid.Row="0"  Visibility="Collapsed">
+                                <ListBox Background="Transparent"
+                                                ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent},Path=DataViewPropertys}"
+                                                HorizontalAlignment="Stretch" BorderThickness="0" MinWidth="60">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#F2F2F2">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock VerticalAlignment="Center" Margin="4" HorizontalAlignment="Left">
+                                                    <TextBlock.Text>
+                                                        <MultiBinding StringFormat="{}{0} {1}">
+                                                            <Binding Path="Value" Mode="OneWay" ></Binding>
+                                                            <Binding Path="UnitSymbol" Mode="OneWay"></Binding>
+                                                        </MultiBinding>
+                                                    </TextBlock.Text>
+                                                </TextBlock>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                    <ListBox.ItemContainerStyle>
+                                        <Style TargetType="ListBoxItem">
+                                            <Setter Property="Padding" Value="0"/>
+                                            <Setter Property="Template" >
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                                        <Border Height="28" Name="SkinNavBorder"  BorderThickness="1" BorderBrush="#C0C0BF" Background="Transparent">
+                                                            <ContentPresenter />
+                                                        </Border>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </ListBox.ItemContainerStyle>
+                                </ListBox>
+                            </Border>
+
+                        </Canvas>
+                        <Popup Name="PART_Popup" Placement="Right" HorizontalOffset="0" VerticalOffset="0"
+                               AllowsTransparency="true" Opacity="1" IsOpen="false" StaysOpen="true" Focusable="False"
+                               PopupAnimation="none">
+                            <Border BorderBrush="#000000" BorderThickness="1" Background="#F2F2F2" Name="popup_content">
+                                <DockPanel LastChildFill="True">
+                                    <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Stretch" FlowDirection="RightToLeft">
+                                        <Button Content="关闭"  Style="{StaticResource CloseButtonStyle}" x:Name="PART_PopupClose" />
+                                    </StackPanel>
+                                    <Border>
+                                        <ListBox  Background="Transparent" x:Name="lb_ConfigViewPropertys"
+                                                ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent},Path=ConfigViewPropertys}" Padding="5"
+                                                HorizontalAlignment="Stretch" BorderThickness="0" MinWidth="250">
+                                            <ListBox.Resources>
+                                                <DataTemplate x:Key="TextPropertyDataTemplate">
+
+                                                    <Grid Margin="0,0,0,0"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#F2F2F2">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="auto" MinWidth="100"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <TextBlock VerticalAlignment="Center" Margin="10,0" HorizontalAlignment="Left"><Run  Text="{Binding Name,Mode=OneWay,StringFormat={}{0}:}"/></TextBlock>
+
+                                                        <Border Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0,0,0,0"   BorderBrush="#C0C0BF">
+                                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" x:Name="operateStackPanel">
+                                                                <TextBlock VerticalAlignment="Center" MinHeight="26"  Margin="5,0,0,0" HorizontalAlignment="Left"><Run Text="{Binding Value,Mode=OneWay}"/></TextBlock>
+                                                            </StackPanel>
+                                                        </Border>
+                                                    </Grid>
+                                                </DataTemplate>
+                                                <DataTemplate x:Key="TextBoxPropertyDataTemplate">
+                                                    <Grid Margin="0,0,0,0"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#F2F2F2">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="auto" MinWidth="100"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <TextBlock VerticalAlignment="Center" Margin="10,0" HorizontalAlignment="Left"><Run  Text="{Binding Name,Mode=OneWay,StringFormat={}{0}:}"/></TextBlock>
+
+                                                        <Border Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0,0,0,0"   BorderBrush="#C0C0BF">
+                                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" x:Name="operateStackPanel">
+                                                                <TextBox x:Name="txtSetValue" VerticalAlignment="Center" VerticalContentAlignment="Center" MinHeight="26" Margin="3,0" HorizontalAlignment="Left" Text="{Binding Value,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" MinWidth="64"></TextBox>
+                                                                <Button x:Name="btnSendValue" Content="设定" Width="58" Height="24" Tag="{Binding ElementName=txtSetValue}" DataContext="{Binding /}" VerticalAlignment="Center" Margin="7,0,0,0"/>
+                                                            </StackPanel>
+                                                        </Border>
+                                                    </Grid>
+                                                </DataTemplate>
+                                                <DataTemplate x:Key="ComboBoxPropertyDataTemplate">
+                                                    <Grid Margin="0,0,0,0"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#F2F2F2">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="auto" MinWidth="100"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <TextBlock VerticalAlignment="Center" Margin="10,0" HorizontalAlignment="Left"><Run  Text="{Binding Name,Mode=OneWay,StringFormat={}{0}:}"/></TextBlock>
+                                                        <Border Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0,0,0,0"   BorderBrush="#C0C0BF">
+                                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" x:Name="operateStackPanel">
+                                                                <ComboBox VerticalAlignment="Center" MinHeight="26" Margin="5,0" HorizontalAlignment="Left" SelectedValue="{Binding Value,Mode=OneWay}" MinWidth="130"></ComboBox>
+                                                            </StackPanel>
+                                                        </Border>
+                                                    </Grid>
+                                                </DataTemplate>
+                                                <DataTemplate x:Key="BoolPropertyDataTemplate">
+                                                    <Grid Margin="0,0,0,0"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#F2F2F2">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="auto" MinWidth="100"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <TextBlock VerticalAlignment="Center" Margin="10,0" HorizontalAlignment="Left"><Run  Text="{Binding Name,Mode=OneWay,StringFormat={}{0}:}"/></TextBlock>
+                                                        <Border Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0,0,0,0"   BorderBrush="#C0C0BF">
+                                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" x:Name="operateStackPanel">
+                                                                <s:AyRadioList x:Name="radioSetValue" CheckedRadioPath="Tag" CheckedRadioValue="{Binding Value,Mode=OneWay}" VerticalAlignment="Center">
+                                                                    <RadioButton Content="开"   Tag="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></RadioButton>
+                                                                    <RadioButton Content="关"   Tag="False" Margin="5,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></RadioButton>
+                                                                </s:AyRadioList>
+                                                                <Button x:Name="btnSendValue" Content="设定" Width="58" Height="24" Tag="{Binding ElementName=radioSetValue}" DataContext="{Binding /}" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                                            </StackPanel>
+                                                            <!--<CheckBox MinHeight="26" IsChecked="{Binding Value,Mode=OneWay}" MinWidth="130"></CheckBox>-->
+                                                        </Border>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ListBox.Resources>
+                                            <ListBox.ItemTemplateSelector>
+                                                <s:ConfigViewDataTemplateSelector TextPropertyTemplate="{StaticResource TextPropertyDataTemplate}" TextBoxPropertyTemplate="{StaticResource TextBoxPropertyDataTemplate}" 
+                                                                                  ComboBoxPropertyTemplate="{StaticResource ComboBoxPropertyDataTemplate}" BoolPropertyTemplate="{StaticResource BoolPropertyDataTemplate}"/>
+                                            </ListBox.ItemTemplateSelector>
+                                            <ListBox.ItemContainerStyle>
+                                                <Style TargetType="ListBoxItem">
+                                                    <Setter Property="Padding" Value="0"/>
+                                                    <Setter Property="Template" >
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                                                <Border Height="32" Name="SkinNavBorder" >
+                                                                    <ContentPresenter />
+                                                                </Border>
+                                                                <ControlTemplate.Triggers>
+                                                                    <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                                                                        <Setter Property="ListBoxItem.Background" Value="#F6F6F6"></Setter>
+                                                                        <Setter Property="ListBoxItem.Foreground" Value="#000"></Setter>
+                                                                    </Trigger>
+                                                                </ControlTemplate.Triggers>
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </ListBox.ItemContainerStyle>
+                                        </ListBox>
+                                    </Border>
+                                </DockPanel>
+                            </Border>
+                        </Popup>
+
+                    </Grid>
+
+
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Value="False"
+                                     Binding="{Binding RelativeSource={RelativeSource Self},Path=Editable}">
+                            <Setter TargetName="PART_TopLeftArea" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="PART_TopRightArea" Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+
+                        <DataTrigger Value="False"
+                                     Binding="{Binding RelativeSource={RelativeSource Self},Path=TagVisible}">
+                            <Setter TargetName="tbTag" Property="Visibility" Value="Hidden" />
+                        </DataTrigger>
+                        <DataTrigger Value="True"
+                                     Binding="{Binding RelativeSource={RelativeSource Self},Path=TagVisible}">
+                            <Setter TargetName="tbTag" Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Value="True"
+                                           Binding="{Binding RelativeSource={RelativeSource Self},Path=IsMouseOver}" />
+                                <Condition Value="True"
+                                           Binding="{Binding RelativeSource={RelativeSource Self},Path=Editable}" />
+                            </MultiDataTrigger.Conditions>
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Value="True"
+                                           Binding="{Binding RelativeSource={RelativeSource Self},Path=IsSelected}" />
+                                <Condition Value="{x:Static sys:Guid.Empty}"
+                                           Binding="{Binding RelativeSource={RelativeSource Self},Path=ParentID}" />
+                            </MultiDataTrigger.Conditions>
+                        </MultiDataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
